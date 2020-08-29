@@ -4,8 +4,14 @@
 require 'tennis'
   describe TennisScorer do
     it "can score a new game with 0 points" do
-      tennis_score = TennisScorer.new
-      score = tennis_score.score
-      expect(score).to eq('love - love') # player 1 and player 2 are 0 - 0
+      tennis_scorer = TennisScorer.new
+      score = tennis_scorer.score
+      expect(tennis_scorer.score).to eq('love - love') # player 1 and player 2 are 0 - 0
+    end
+
+    it "can score a game where player one has scored" do
+      tennis_scorer = TennisScorer.new
+      tennis_scorer.win_point
+      expect(tennis_scorer.score).to eq('fifteen - love')
     end
   end
