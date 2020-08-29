@@ -8,6 +8,8 @@ The scoring system is as follows:
 
 Each player can have either of these points in one game 0 15 30 40
 
+The running score of each game is described in a manner peculiar to tennis: scores from zero to three points are described as “love”, “fifteen”, “thirty”, and “forty” respectively.
+
 If you have 40 and you win the ball you win the game, however there are special rules.
 
 If both have 40 the players are deuce.
