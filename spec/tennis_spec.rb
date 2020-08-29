@@ -15,10 +15,14 @@ require 'tennis'
     end
 
     it "can score a game where player one has scored twice" do
-      tennis_scorer.win_point
-      tennis_scorer.win_point
+      2.times { tennis_scorer.win_point }
+  
       expect(tennis_scorer.score).to eq('thirty - love')
     end
   
-
+    it "can score a game where player one has scored thrice" do
+      3.times { tennis_scorer.win_point }
+  
+      expect(tennis_scorer.score).to eq('forty - love')
+    end
   end

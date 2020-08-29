@@ -10,7 +10,9 @@ class TennisScorer
   def win_point
     if @score == "love"
       @score = 'fifteen'
-    else
+    elsif @score == "thirty"
+      @score = 'forty'
+    else 
       @score = 'thirty'
     end
   end
